@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Болд – вэб загвар</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header class="header">
+    <a class="logo" href="#home">Болд</a>
+ 
+    <!-- Гар утасны цэс: CSS-only (checkbox) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Цэс нээх/хаах">
+    <label for="menu-toggle" class="burger" aria-hidden="true"><span></span><span></span></label>
+ 
+    <nav class="nav" aria-label="Үндсэн цэс">
+      <ul>
+        <li><a href="#home">Нүүр</a></li>
+        <li><a href="#about">Тухай</a></li>
+        <li><a href="#projects">Төслүүд</a></li>
+        <li><a href="#contact">Холбоо барих</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Би Болд. Вэб хуудсыг цэвэр, энгийн зурдаг.</h1>
+        <p>Вэб хөгжүүлэлт сурч буй оюутан. Гар утаснаас эхлээд том дэлгэц хүртэл тохирдог хуудас хийнэ.</p>
+        <a href="#projects" class="btn">Төслүүдийг үзэх</a>
+      </div>
+ 
+      <!-- Тал нутгийн үүр цайх: нар аажмаар мандана -->
+      <svg class="landscape" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <g class="sun"><circle cx="900" cy="190" r="110" fill="#FFB000"/></g>
+        <path d="M0 210 C150 150 300 190 450 170 C650 140 800 200 1000 165 C1100 150 1150 170 1200 175 L1200 300 L0 300 Z" fill="#3E66EA"/>
+        <path d="M0 250 C200 205 380 245 600 225 C800 205 1000 250 1200 220 L1200 300 L0 300 Z" fill="#5F8A3C"/>
+        <path d="M0 280 C250 255 500 285 750 268 C950 255 1100 275 1200 266 L1200 300 L0 300 Z" fill="#F4F6FA"/>
+      </svg>
+    </section>
+ 
+    <section id="about" class="section">
+      <h2>Миний тухай</h2>
+      <div class="about-grid">
+        <p class="lead">Хуудас бүр эхлээд гар утсан дээр зурагдана. Дэлгэц томрох тусам орон зай нэмэгдэж, элемент бүр өөрийн байрыг олно.</p>
+        <dl class="skills">
+          <div><dt>HTML5</dt><dd>хуудасны бүтэц</dd></div>
+          <div><dt>CSS3</dt><dd>media queries, grid, flexbox</dd></div>
+          <div><dt>Figma</dt><dd>wireframe, макет</dd></div>
+          <div><dt>Mobile-First</dt><dd>жижиг дэлгэцээс эхлэх</dd></div>
+        </dl>
+      </div>
+    </section>
+ 
+    <section id="projects" class="section projects">
+      <h2>Төслүүд</h2>
+      <div class="cards">
+        <article class="card c1"><div class="thumb"></div><h3>Хувийн танилцуулга</h3><p>Нэг хуудастай портфолио, 3 хэмжээнд тохирдог.</p></article>
+        <article class="card c2"><div class="thumb"></div><h3>Кофе шопын лэндинг</h3><p>Цэс, байршил, ажиллах цагийн хуудас.</p></article>
+        <article class="card c3"><div class="thumb"></div><h3>Хичээлийн хуваарь</h3><p>Долоо хоногийн хуваарийг утсан дээр уншихад хялбар болгосон.</p></article>
+        <article class="card c4"><div class="thumb"></div><h3>Блогийн загвар</h3><p>Нийтлэл унших тохиромжтой мөрийн урттай загвар.</p></article>
+      </div>
+    </section>
+ 
+    <section id="contact" class="section contact">
+      <h2>Холбоо барих</h2>
+      <form class="form" action="#" onsubmit="return false">
+        <label>Нэр <input type="text" placeholder="Таны нэр" autocomplete="name"></label>
+        <label>И-мэйл <input type="email" placeholder="name@example.com" autocomplete="email"></label>
+        <label>Зурвас <textarea rows="4" placeholder="Юу хийхээр төлөвлөж байна вэ?"></textarea></label>
+        <button class="btn" type="submit">Зурвас илгээх</button>
+      </form>
+    </section>
+  </main>
+ 
+  <footer class="footer">
+    <p>&copy; 2026 Болд. Лаб 5: Responsive вэб хуудас.</p>
+  </footer>
+ 
+</body>
+</html>
