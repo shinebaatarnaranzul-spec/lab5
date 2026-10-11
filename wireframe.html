@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe – Портфолио</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, Arial, sans-serif; margin: 0; padding: 1rem; background: #f9fafb; color: #111; }
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+  .wrap { display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; }
+  svg { max-width: 100%; height: auto; background: #fff; border: 2px solid #111; }
+  text { font-family: Arial, sans-serif; font-size: 13px; fill: #111; }
+  .box { fill: #e5e7eb; stroke: #6b7280; stroke-width: 1.5; }
+  .bar { fill: #d1d5db; stroke: #374151; stroke-width: 1.5; }
+  .x { stroke: #9ca3af; stroke-width: 1; }
+  .btn { fill: #fff; stroke: #111; stroke-width: 2; }
+</style>
+</head>
+<body>
+<h1>Wireframe: Тал нутгийн үүр – портфолио</h1>
+
+<div class="wrap">
+
+<!-- ============ MOBILE 360x760 ============ -->
+<div>
+<h2>1) Гар утас (360px)</h2>
+<svg width="360" height="760" viewBox="0 0 360 760">
+  <!-- header -->
+  <rect class="bar" x="0" y="0" width="360" height="56"/>
+  <text x="16" y="33">LOGO</text>
+  <g stroke="#111" stroke-width="3"><line x1="310" y1="20" x2="340" y2="20"/><line x1="310" y1="28" x2="340" y2="28"/><line x1="310" y1="36" x2="340" y2="36"/></g>
+  <!-- hero -->
+  <text x="16" y="86">Сайн байна уу, би Болд (H1)</text>
+  <rect class="box" x="16" y="100" width="328" height="40"/><text x="24" y="125">Танилцуулга текст</text>
+  <rect class="btn" x="16" y="152" width="150" height="34" rx="4"/><text x="30" y="174">Төслүүд харах</text>
+  <rect class="box" x="16" y="200" width="328" height="130"/><line class="x" x1="16" y1="200" x2="344" y2="330"/><line class="x" x1="344" y1="200" x2="16" y2="330"/><text x="150" y="270">НАР + ТАЛ</text>
+  <!-- about -->
+  <text x="16" y="362">Миний тухай (H2)</text>
+  <rect class="box" x="16" y="372" width="328" height="60"/>
+  <rect class="box" x="16" y="442" width="70" height="24" rx="12"/><rect class="box" x="94" y="442" width="70" height="24" rx="12"/><rect class="box" x="172" y="442" width="70" height="24" rx="12"/>
+  <!-- projects 1 column -->
+  <text x="16" y="494">Төслүүд (1 багана)</text>
+  <rect class="box" x="16" y="504" width="328" height="70"/><text x="150" y="544">Карт 1</text>
+  <rect class="box" x="16" y="584" width="328" height="70"/><text x="150" y="624">Карт 2</text>
+  <text x="165" y="676">...</text>
+  <!-- footer -->
+  <rect class="bar" x="0" y="700" width="360" height="60"/><text x="110" y="735">© Footer</text>
+</svg>
+</div>
+
+<!-- ============ MOBILE MENU OPEN ============ -->
+<div>
+<h2>2) Гар утас – цэс нээгдсэн</h2>
+<svg width="360" height="300" viewBox="0 0 360 300">
+  <rect class="bar" x="0" y="0" width="360" height="56"/>
+  <text x="16" y="33">LOGO</text>
+  <g stroke="#111" stroke-width="3"><line x1="312" y1="16" x2="338" y2="40"/><line x1="312" y1="40" x2="338" y2="16"/></g>
+  <rect class="box" x="0" y="56" width="360" height="52"/><text x="16" y="87">Нүүр</text>
+  <rect class="box" x="0" y="108" width="360" height="52"/><text x="16" y="139">Тухай</text>
+  <rect class="box" x="0" y="160" width="360" height="52"/><text x="16" y="191">Төслүүд</text>
+  <rect class="box" x="0" y="212" width="360" height="52"/><text x="16" y="243">Холбоо барих</text>
+</svg>
+</div>
+
+<!-- ============ DESKTOP 1000x640 ============ -->
+<div style="width:100%">
+<h2>3) Компьютер (1024px+)</h2>
+<svg width="1000" height="640" viewBox="0 0 1000 640">
+  <!-- header -->
+  <rect class="bar" x="0" y="0" width="1000" height="56"/>
+  <text x="24" y="33">LOGO</text>
+  <text x="640" y="33">Нүүр</text><text x="710" y="33">Тухай</text><text x="785" y="33">Төслүүд</text><text x="870" y="33">Холбоо барих</text>
+  <!-- hero 2 columns -->
+  <text x="40" y="110">Сайн байна уу, би Болд (H1)</text>
+  <rect class="box" x="40" y="125" width="420" height="70"/><text x="50" y="165">Танилцуулга текст</text>
+  <rect class="btn" x="40" y="210" width="160" height="38" rx="4"/><text x="55" y="234">Төслүүд харах</text>
+  <rect class="box" x="520" y="80" width="440" height="190"/><line class="x" x1="520" y1="80" x2="960" y2="270"/><line class="x" x1="960" y1="80" x2="520" y2="270"/><text x="725" y="180">НАР + ТАЛ</text>
+  <!-- about 2fr/1fr -->
+  <text x="40" y="310">Миний тухай (H2)</text>
+  <rect class="box" x="40" y="322" width="600" height="70"/>
+  <rect class="box" x="670" y="322" width="290" height="70"/><text x="760" y="362">Ур чадвар</text>
+  <!-- projects 4 columns -->
+  <text x="40" y="430">Төслүүд (4 багана)</text>
+  <rect class="box" x="40" y="442" width="205" height="110"/><text x="115" y="502">Карт 1</text>
+  <rect class="box" x="265" y="442" width="205" height="110"/><text x="340" y="502">Карт 2</text>
+  <rect class="box" x="490" y="442" width="205" height="110"/><text x="565" y="502">Карт 3</text>
+  <rect class="box" x="715" y="442" width="245" height="110"/><text x="810" y="502">Карт 4</text>
+  <!-- footer -->
+  <rect class="bar" x="0" y="590" width="1000" height="50"/><text x="440" y="620">© Footer</text>
+</svg>
+</div>
+
+</div>
+
+<h2>Тэмдэглэл</h2>
+<ul>
+  <li>Гар утас: 1 багана, hamburger цэс (&lt; 768px)</li>
+  <li>Таблет: хэвтээ цэс, Hero 2 багана, карт 2 багана (≥ 768px)</li>
+  <li>Компьютер: карт 4 багана, контент 1100px-ээр хязгаарлагдана (≥ 1024px)</li>
+</ul>
+</body>
+</html>
